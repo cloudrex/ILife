@@ -6,5 +6,7 @@ namespace ILife {
         IJobRisk?[] Risks { get; set; }
 
         Person[] Employees { get; set; }
+
+        uint Intensity { get; set; }
     }
 }

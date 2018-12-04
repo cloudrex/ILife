@@ -1,4 +1,5 @@
-namespace ILife {
+namespace ILife
+{
     public class Person : IPerson
     {
         public virtual int Money => 0;
@@ -9,9 +10,16 @@ namespace ILife {
         public virtual ITrait?[] Traits = null;
         public virtual Responsibility?[] Responsibilities = null;
 
+        public virtual uint Stress => 0;
+
         public virtual string Talk(IPerson person)
         {
             return $"Hi, I'm {this.Name}!";
+        }
+
+        public virtual void DoNeeds()
+        {
+            int relief = 1;
         }
     }
 }

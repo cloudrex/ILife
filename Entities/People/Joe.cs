@@ -1,5 +1,6 @@
-namespace ILife {
-    public class Joe : Person
+namespace ILife
+{
+    public class Joe : EmployedPerson
     {
         public HealthCondition Condition => HealthCondition.Good;
         public int Age => 20;
